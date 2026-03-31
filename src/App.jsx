@@ -82,8 +82,8 @@ function App() {
               <div className={`card ${isFlipped ? 'flipped' : ''} ${matchedClass}`} key={card.id} onClick={() => handleChoice(card)}>
                 <div className="card-inner">
                   <div className="card-front">
-                    <img src={`/${card.src}`} alt="card" />
-                  </div>
+                  <img src={`${import.meta.env.BASE_URL}${card.src}`} alt="card" />
+                </div>
                   <div className="card-back"></div>
                 </div>
               </div>
